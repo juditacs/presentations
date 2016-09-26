@@ -132,6 +132,7 @@
             \begin{itemize}
                 \item \emph{zúzalékával}
             \end{itemize}
+            \pause
         \item[névelemazonosítás] named entity recognition
             \pause
             \begin{itemize}
@@ -141,9 +142,12 @@
 \end{frame}
 
 \begin{frame}{NLP alapfeladatok II.}
+    \pause
     \begin{description}
         \item[szófaji elemzés] part-of-speech tagging
+    \pause
         \item[,,nyelvtani elemzés''] nyelvtani szerkezet feltárása. Különböző nyelvészeti elméletek különböző elemzéseket adnak.
+        \pause
         \item[egyértelműsítés] word sense disambiguation
     \end{description}
 \end{frame}
@@ -151,19 +155,25 @@
 \begin{frame}{Magasabb szintű NLP feladatok}
     \begin{description}
             \pause
-        \item[gépi fordítás]
+        \item[gépi fordítás] rule-based MT, statistical MT, neural MT
+            \pause
         \item[koreferncia feloldás] mik utalnak ugyanarra az entitásra? \emph{New York -- Big Apple}
+            \pause
         \item[szentiment analízis] vélemény, érzelem kinyerése
+            \pause
         \item[kapcsolatkinyerés] relation extraction, ki kinek a rokona?
+            \pause
         \item[kérdésmegválaszolás]
+            \pause
         \item[szövegösszegzés] text summarization
+            \pause
         \item[helyesírás-ellenőrzés]
     \end{description}
 \end{frame}
 
 
 \begin{frame}{Hogyan oldjuk meg ezeket a feladatokat?}
-    \begin{itemize}
+    \begin{enumerate}
             \pause
         \item Szabályalapú
             \pause
@@ -192,6 +202,33 @@
                     \pause
                 \item deep learning
             \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Adatok}
+    \pause
+    \begin{itemize}
+        \item címkézett
+            \pause
+            \begin{itemize}
+                \item névelemekre:
+                    \pause
+                \item New York - B-LOC E-LOC
+                \item Google - ORG
+                    \pause
+                \item gold standard, silver standard
+            \end{itemize}
+            \pause
+        \item címkézetlen
+            \pause
+            \begin{itemize}
+                \item nyers szöveg
+                \item kontextusból nyerhetünk információt
+            \end{itemize}
+            \pause
+        \item rengeteg standard adat
+            \pause
+        \item de sose elég, 6000+ nyelv :(
     \end{itemize}
 \end{frame}
 
@@ -212,6 +249,7 @@
             \pause
                 \item deep learning: tensorflow, theano, torch, keras stb.
             \end{itemize}
+            \pause
          \item plain text, TSV, esetleg XML
              \pause
              \begin{itemize}
@@ -220,7 +258,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Demo}
+\begin{frame}{}
 
     \Large Hogyan készítenénk helyesírásellenőrzőt?
 
@@ -229,15 +267,24 @@
     \vspace*{1cm}
 
     Hogyan sorolnánk fel az összes magyar szót?
+
+    \pause
+
+    \vspace*{1cm}
+
+    Demo
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Köszönöm a figyelmet}
     \begin{center}
         judit@aut.bme.hu
 
         \vspace*{2cm}
 
-        Demo: \url{https://github.com/juditacs/kszk40}
+            Demo: \url{https://gist.github.com/juditacs/4435129e6f79015ba98fba13f1736b84}
+
+        \vspace*{2cm}
+        Önlab, szakdolgozat, diplomaterv, TDK lehetőség
     \end{center}
 \end{frame}
 
